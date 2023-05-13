@@ -4,6 +4,12 @@
 
 vue代码都在view里；配置路由在router里；
 utils的request.js是axios的配置文件，axios用于后端异步通信
+
+myhome和pages的F1,F2是“我的”界面；health是健康界面，需要和主页合并
+## 如果想查看health
+可以把main.js中 //import health from './health'的注释符号去掉，
+并且把render: h => h(myhome)中的myhome改为health
+
 ## 如何部署
 1. 安装nodejs
 2. 拉取项目源码(下载zip或git pull)
